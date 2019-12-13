@@ -1,0 +1,76 @@
+import math
+
+def displayWelcome():
+  print "Welcome to Area Functions Program"
+
+def calcAreaCircle(r):
+  """Calculates the area of a circle"""
+  PI = 3.14
+  area = PI * r * r 
+  return area
+
+def calcPerimeterCircle(r):
+  PI = 3.14
+  per = 2 * PI * r
+  return per 
+  
+def calcAreaSquare(side):
+  sq_Area = side * side
+  return sq_Area
+
+def calcPerimeterSquare(side):
+  sq_Per = side * 4
+  return sq_Per
+
+def calcAreaRect(width, height):
+  rect_Area = width * height
+  return rect_Area
+
+def calcPerimeterRect(width, height):
+  rect_Per = (width * 2) + (height * 2)
+  return rect_Per
+
+def calcAreaTriangle(base, height):
+  tri_Area = (height * base) / 2
+  return tri_Area
+
+
+displayWelcome()
+
+
+radius = 3.56
+
+area = calcAreaCircle(radius)
+
+perimeter = calcPerimeterCircle(radius)
+
+print('Circle   : area = {0:.2f}, perimeter = {1:.2f}'.format(area, perimeter))
+
+
+side = 9.23
+
+area = calcAreaSquare(side)
+
+perimeter = calcPerimeterSquare(side)
+
+print('Square   : area = {0:.2f}, perimeter = {1:.2f}'.format(area, perimeter))
+
+
+width = 2.9
+
+height = 14.22
+
+area = calcAreaRect(width, height)
+
+perimeter = calcPerimeterRect(width, height)
+
+print('Rectangle: area = {0:.2f}, perimeter = {1:.2f}'.format(area, perimeter))
+
+
+base = 7.97
+
+height = 5.31
+
+area = calcAreaTriangle(base, height)
+
+print('Triangle : area = {0:.2f}'.format(area))
